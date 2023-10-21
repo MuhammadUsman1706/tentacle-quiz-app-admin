@@ -1,0 +1,230 @@
+.main-container {
+  width: 1108px;
+  /* max-width: 95%; */
+  margin: 1rem 0;
+  height: 350px;
+}
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 300px; */
+  margin-bottom: 5rem;
+}
+.profile-info {
+  display: flex;
+  align-items: flex-end;
+}
+.profile-img {
+  width: 54px;
+  height: 54px;
+}
+.profile-img img {
+  width: 100%;
+  height: 100%;
+}
+.profile-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.userName {
+  font-size: 1.95312rem;
+  line-height: 135%;
+  color: #1d306b;
+  font-weight: 700;
+  text-align: center;
+  max-width: calc(100vw - 36px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.quizzesTaken {
+  font-size: 1rem;
+  line-height: 120%;
+  color: #1d306b;
+  font-weight: 400;
+  text-align: center;
+}
+.badges-section {
+  display: flex;
+  flex-direction: column;
+}
+.userBadges {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 1rem;
+}
+.rankBadges {
+  background: #ea80fc;
+  margin-right: 7px;
+  border-radius: 0px 30px;
+  max-width: 104px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.scoreBadges {
+  background: #f77e53;
+  margin-right: 7px;
+  border-radius: 0px 30px;
+  max-width: 104px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.daysBadges {
+  background: #00bfa5;
+  margin-right: 7px;
+  border-radius: 0px 30px;
+  max-width: 104px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.badgeInfo-Div {
+  padding: 13px 16px;
+  min-height: 146px;
+}
+.rankIcon {
+  width: 26px;
+  height: 40px;
+}
+.rankIcon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.rankText {
+  display: flex;
+  flex-direction: column;
+}
+.overallRank {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+}
+.rankValue {
+  font-size: 1.5625rem;
+  line-height: 135%;
+  font-weight: 700;
+  color: #fff;
+}
+.players {
+  font-size: 0.8rem;
+  line-height: 125%;
+  color: #757c99;
+  font-weight: 400;
+  margin-top: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  max-width: 343px;
+}
+.dashboard-body {
+  background: linear-gradient(180deg, #f6f9ff, #fff 50%);
+}
+.levelContainer {
+  max-width: 915px;
+  width: 100%;
+  margin: 0 auto;
+}
+.levelHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 26px;
+  background: #fff;
+  border-radius: 30px 30px 0 0;
+}
+.headRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.levelHeading {
+  margin-right: 9px;
+  font-weight: 700;
+  font-size: 1.5625rem;
+  line-height: 135%;
+  color: #1d306b;
+}
+.nextLevelDiv {
+  display: flex;
+  align-items: center;
+}
+.nextLevelDiv span {
+  font-size: 1rem;
+  line-height: 120%;
+  color: #1d306b;
+  font-weight: 700;
+}
+.nextLevelDiv p {
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: #1d306b;
+}
+
+.profile-container {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  column-gap: 1rem;
+}
+
+@media screen and (min-width: 1108px) {
+  /* .profile-img {
+    width: 78px;
+    height: 78px;
+    margin-right: 16px;
+  } */
+  .userName {
+    font-size: 2rem;
+    line-height: 125%;
+    align-self: start;
+    max-width: 358px;
+  }
+  .quizzesTaken {
+    align-self: start;
+    margin-bottom: 0;
+  }
+  .rankBadges,
+  .scoreBadges,
+  .daysBadges {
+    max-width: 100%;
+  }
+  .badgeInfo-Div {
+    display: flex;
+    align-items: center;
+    min-height: 76px;
+  }
+  .rankIcon {
+    width: 29px;
+    height: 45px;
+    margin-right: 12px;
+  }
+  .players {
+    max-width: 620px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .levelHead {
+    padding: 20px 30px 20px 25px;
+  }
+  .headLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nextLevelDiv {
+    margin-top: 5px;
+  }
+}
